@@ -24,4 +24,11 @@ status = "Enabled"
 }
 
 
+terraform {
+backend "s3" {
+region = "us-east-1"
+bucket = "anjibharu.flm77.moonobucket"
+key = "prod/terraform.tfstate"
+}
+}
 
